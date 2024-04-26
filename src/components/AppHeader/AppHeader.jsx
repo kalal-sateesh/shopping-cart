@@ -6,7 +6,7 @@ import { useSelector } from "react-redux";
 const AppHeader = () => {
     const data = useSelector((state) => state.cart.data);
   return (
-    <nav className="bg-info">
+    <nav className={styles.nav}>
       <NavLink to="/cart">
         <Button variant="secondary me-5">
           CART
